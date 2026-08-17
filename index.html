@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Kenneth Céspedes</title>
+
+    <!-- Importación de la hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         NAVEGACIÓN
+    ================================ -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Kenneth
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Mis proyectos</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==============================
+             HERO / INICIO
+        ================================ -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <img src="img/mifotoperfil.png" alt="Fotografía de Kenneth Céspedes" class="foto-perfil">
+
+                    <p class="saludo">
+                        Bienvenido a mi portafolio
+                    </p>
+
+                    <h1>
+                        Hola, soy Kenneth Céspedes Espinosa
+                    </h1>
+
+                    <h2>
+                        Estudiante de informática
+                    </h2>
+
+                    <p class="descripcion-hero">
+                        Soy estudiante de la Universidad de Costa Rica (UCR)
+                        y actualmente estudio la carrera de Informática Empresarial.
+                    </p>
+
+                    <div class="hero-botones">
+                        <a href="#proyectos" class="btn">
+                            Ver proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-secundario">
+                            Contactarme
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             SOBRE MÍ
+        ================================ -->
+        <section id="sobre-mi" class="section">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Sobre mí</h2>
+                <p class="subtitulo-seccion">
+                    Conoce más sobre mi trayectoria profesional, intereses y habilidades técnicas.
+                </p>
+
+                <div class="sobre-mi-container">
+                    <div class="sobre-mi-texto">
+                        <h3>¿Quién soy?</h3>
+                        <p>
+                            Soy un apasionado de la tecnología y el desarrollo de software. Cuento con experiencia
+                            creando aplicaciones web dinámicas y eficientes.
+                        </p>
+                        <p>
+                            Mi objetivo es fomentar el aprendizaje tecnológico y desarrollar herramientas digitales
+                            modernas que aporten valor a la educación y a las empresas.
+                        </p>
+                    </div>
+
+                    <div class="datos-personales">
+                        <div class="dato">
+                            <strong>Nombre completo:</strong>
+                            <span>Kenneth Céspedes Espinosa</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Correo electrónico:</strong>
+                            <span>contacto@kennethcespedes.com</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Teléfono:</strong>
+                            <span>+506 8705-4517</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Ubicación:</strong>
+                            <span>Costa Rica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades -->
+                <div class="habilidades-container">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="habilidades">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Git & GitHub</span>
+                        <span>Responsive Design</span>
+                        <span>Docencia TIC</span>
+                        <span>Bases de Datos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             PROYECTOS
+        ================================ -->
+        <section id="proyectos" class="section section-gray">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Mis Proyectos</h2>
+                <p class="subtitulo-seccion">
+                    Una muestra de los proyectos y soluciones web que he desarrollado recientemente.
+                </p>
+
+                <div class="proyectos-container">
+                    <!-- Proyecto 1 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto1.jpg" alt="Plataforma Educativa">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Educación</span>
+                            <h3>Aplicación de escritorio Java</h3>
+                            <p>
+                                Sistema para la gestión de recursos didácticos y actividades evaluativas para
+                                estudiantes de informática.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span>Java</span>
+                                <span>Swing</span>
+                                <span>MySQL</span>
+                            </div>
+                            <button type="button" class="btn" onclick="verProyecto('Aplicación de escritorio Java')">
+                                Ver proyecto
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto2.jpg" alt="Gestor de Inventarios">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Desarrollo Web</span>
+                            <h3>Gestor de Inventarios</h3>
+                            <p>
+                                Aplicación web responsiva diseñada para el control y seguimiento de equipos de cómputo
+                                en laboratorios.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span>JavaScript</span>
+                                <span>CSS Grid</span>
+                                <span>Local Storage</span>
+                            </div>
+                            <button type="button" class="btn" onclick="verProyecto('Gestor de Inventarios')">
+                                Ver proyecto
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto3.jpg" alt="Portal de Cursos">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Web Design</span>
+                            <h3>Portal de Cursos</h3>
+                            <p>
+                                Sitio web informativo con catálogo interactivo de cursos y talleres de programación.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span>HTML5</span>
+                                <span>Flexbox</span>
+                                <span>CSS3</span>
+                            </div>
+                            <button type="button" class="btn" onclick="verProyecto('Portal de Cursos')">
+                                Ver proyecto
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             CONTACTO
+        ================================ -->
+        <section id="contacto" class="section">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Contacto</h2>
+                <p class="subtitulo-seccion">
+                    ¿Tienes alguna consulta o propuesta? Envíame un mensaje y me pondré en contacto contigo a la
+                    brevedad.
+                </p>
+
+                <div class="contacto-container">
+                    <div class="contacto-info">
+                        <h3>Información de contacto</h3>
+                        <p>
+                            Estoy disponible para proyectos de desarrollo, capacitaciones y consultas académicas.
+                        </p>
+
+                        <div class="contacto-dato">
+                            <strong>Teléfono / WhatsApp:</strong>
+                            <span>8705-4517</span>
+                        </div>
+
+                        <div class="contacto-dato">
+                            <strong>Correo:</strong>
+                            <span>contacto@kennethcespedes.com</span>
+                        </div>
+
+                        <div class="contacto-dato">
+                            <strong>Disponibilidad:</strong>
+                            <span>Lunes a Viernes (8:00 am - 5:00 pm)</span>
+                        </div>
+                    </div>
+
+                    <!-- Formulario -->
+                    <form id="formContacto" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==============================
+         FOOTER
+    ================================ -->
+    <footer>
+        <div class="footer-container">
+            <p>
+                &copy; <span id="anio"></span> Kenneth Céspedes Espinosa. Todos los derechos reservados.
+            </p>
+            <p>
+                Portafolio personal
+            </p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
